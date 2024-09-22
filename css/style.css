@@ -26,17 +26,15 @@ h1 {
 
 .title {
     text-align: center;
-    margin: 50px;
+    margin: 30px;
 }
 
 /**************
 MAIN
 **************/
-main {
-    padding: 0 100px;
-}
+
 .description {
-    font-size: 0.5rem;
+    font-size: 14px;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -44,4 +42,61 @@ main {
     font-variation-settings:
         "wdth" 100;
     text-align: center;
+    padding-bottom: 30px;
+}
+
+/* container */
+.container {
+    padding: 0 300px;
+    margin: 20px auto;
+}
+
+.col {
+    display: flex;
+    width: calc(100% / 3 - 20px);
+    height: 80px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px #000000;
+    background-color: #0f0e17;
+}
+
+.row {
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    height: 100%;
+}
+
+.info {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: white;
+    flex-grow: 1;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none; 
+    color: #17c2e4;
+}
+
+.info div {
+    padding: 5px 0;
 }
