@@ -33,6 +33,11 @@ h1 {
 MAIN
 **************/
 
+.container {
+    padding: 0 300px;
+    margin: 20px auto;
+}
+
 .description {
     font-size: 14px;
     font-family: "Fredoka", sans-serif;
@@ -43,12 +48,6 @@ MAIN
         "wdth" 100;
     text-align: center;
     padding-bottom: 30px;
-}
-
-/* container */
-.container {
-    padding: 0 300px;
-    margin: 20px auto;
 }
 
 .col {
@@ -93,10 +92,38 @@ img {
 }
 
 a {
-    text-decoration: none; 
+    text-decoration: none;
     color: #17c2e4;
 }
 
 .info div {
     padding: 5px 0;
+}
+
+/**************
+CSS media query
+**************/
+
+@media screen and (max-width: 1340px) {
+    .container {
+        padding: 0;
+        margin: 20px auto;
+    }
+
+    .col {
+        display: flex;
+        width: calc(60% / 1 - 20px);
+        height: 80px;
+        margin: 10px;
+        box-shadow: 0px 0px 10px #000000;
+        background-color: #0f0e17;
+    }
+
+    .row {
+        margin: 0 -10px;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
